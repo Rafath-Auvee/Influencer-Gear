@@ -207,9 +207,10 @@ button a {
 /* footer  */
 
 footer {
-    height: 150px;
-    width: auto;
+    /* height: 150px;
+    width: auto; */
     margin-top: 200px;
+    padding-bottom: 50px;
 }
 
 .last_section {
@@ -224,4 +225,102 @@ footer {
     line-height: 36px;
     font-feature-settings: 'liga' off;
     color: #FFFFFF;
+    padding-top: 50px;
+}
+
+.sub_text_last {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #D9DBE1;
+}
+
+.social_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 32px;
+    color: white;
+    margin: 0px 6px;
+    background-color: #5955a7;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+
+/* tablet screen  */
+
+@media only screen and (max-width: 850px) {
+    .product_list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 6%;
+        row-gap: 2%;
+        padding-bottom: 10%;
+    }
+    .first_section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .company_logos {
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .main_text {
+        font-size: 33px;
+        text-align: center;
+        line-height: 53px;
+    }
+    .sub_text {
+        width: auto;
+        text-align: center;
+    }
+    .main_button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* mobile screen  */
+
+@media only screen and (max-width: 450px) {
+    .product_list {
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10%;
+        row-gap: 1%;
+        padding-bottom: 62%;
+    }
+    .first_section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .company_logos {
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    .main_text {
+        font-size: 33px;
+        text-align: center;
+        line-height: 53px;
+    }
+    .sub_text {
+        width: auto;
+        text-align: center;
+    }
+    .main_button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
