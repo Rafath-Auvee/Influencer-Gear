@@ -15,7 +15,12 @@
 /* Base Code  */
 
 body {
+    margin: 0;
     font-family: 'Poppins', sans-serif;
+    background-color: #e7e5e5;
+}
+
+.body_margin_part {
     margin: 3% 10%;
 }
 
@@ -116,12 +121,107 @@ button a {
     margin-top: 100px;
 }
 
+.product_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10%;
+    row-gap: 5%;
+}
+
 .product_main_title {
+    margin-bottom: 50px;
     text-align: center;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
-    line-height: 70px;
     color: #3A3A3A;
+}
+
+.product_name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    font-feature-settings: 'liga' off;
+    color: #18191F;
+    margin-top: 5px;
+}
+
+.product_price {
+    margin-top: -15px;
+    margin-bottom: 18px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.rating_value {
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1px;
+    color: #5E6366;
+}
+
+.filled {
+    color: orange;
+    font-size: 14px;
+}
+
+.description {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    letter-spacing: 0.018em;
+    color: #787885;
+}
+
+.product_card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    padding: 17px 0px 13px 13px;
+}
+
+
+/* footer  */
+
+footer {
+    height: 150px;
+    width: auto;
+    margin-top: 200px;
+}
+
+.last_section {
+    background: #0A0826;
+}
+
+.heading_text_last {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
 }
